@@ -75,7 +75,7 @@ void keypad_vid_run (void) {
 
 u8 keyad_u8_get_number(void) {
 	u8 temp = pressedButton;
-	//pressedButton = KEYPAD_NO_NUMBER;
+	pressedButton = KEYPAD_NO_NUMBER;
 	return temp;
 }
 

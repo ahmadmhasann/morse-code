@@ -16,6 +16,7 @@
 #include "scheduler.h"
 #include "from_morse.h"
 #include "mode.h"
+#include "to_morse.h"
 
 int main(void)
 {
@@ -28,7 +29,9 @@ int main(void)
 			from_morse_vid_run();
 	}
 	else if (deviceMode == TO_MORSE_MODE) {
-		
+		lcd_vid_clear_screan();
+		to_morse_vid_init();
+		to_morse_run();
 	}
 	
 

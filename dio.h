@@ -15,17 +15,17 @@ enum {
 	D
 };
 
-#define PORT_OUTPUT 0xFF
-#define PORT_INPUT 0x00
+#define OUTPUT_PORT 0xFF
+#define INPUT_PORT 0x00
 
-#define PIN_OUTPUT 0x01
-#define PIN_INPUT 0x00
+#define OUTPUT_PIN 0x01
+#define INPUT_PIN 0x00
 
-#define PORT_HIGH 0xFF
-#define PORT_LOW 0x00
+#define HIGH_PORT 0xFF
+#define LOW_PORT 0x00
 
-#define PIN_HIGH 0x01
-#define PIn_LOW 0x00
+#define HIGH_PIN 0x01
+#define LOW_PIN 0x00
 
 u8 dio_u8_read_port_value (u8 portNumber);
 u8 dio_u8_read_pin_value (u8 portNumber, u8 index);
